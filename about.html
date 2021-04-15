@@ -4,15 +4,100 @@
 <!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="format-detection" content="telephone=no">
 	<title>Boston Overseas Montessori - About us</title>
 	<link href='http://fonts.googleapis.com/css?family=Gochi+Hand|Arvo:400,700' rel='stylesheet' type='text/css'>
 	<link href="css/jquery.bxslider.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/style.css" />
+	<style>
+		
+.container img {vertical-align: middle;}
 
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+  width: 300%;
+  padding: 20px;
+}
+.services .icon-box {
+  text-align: center;
+  border: 1px solid #d5e1ed;
+  padding: 80px 20px;
+  transition: all ease-in-out 0.3s;
+}
 
+.services .icon-box .img {
+  width:64px;
+  height: 64px;
+  background: #1977cc;
+  border-radius: 5px;
+  transition: all .3s ease-out 0s;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  transform-style: preserve-3d;
+}
+
+.services .icon-box .img {
+  color: #fff;
+  font-size: 28px;
+}
+
+.services .icon-box .img::before {
+  position: absolute;
+  content: '';
+  left: -8px;
+  top: -8px;
+  height: 100%;
+  width: 100%;
+  background: #badaf7;
+  border-radius: 5px;
+  transition: all .3s ease-out 0s;
+  transform: translateZ(-1px);
+}
+
+.services .icon-box h4 {
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.services .icon-box h4 a {
+  color: #2c4964;
+}
+
+.services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .icon-box:hover {
+  background: #ADD8E6;
+  border-color: #ADD8E6;
+}
+
+.services .icon-box:hover .img {
+  background: #fff;
+}
+
+.services .icon-box:hover .img {
+  color: #1977cc;
+}
+
+.services .icon-box:hover .img::before {
+  background: #3291e6;
+}
+
+.services .icon-box:hover h4 a, .services .icon-box:hover p {
+  color: #fff;
+}
+</style>
 </head>
 <body>
 	<div id="wrapper" class="about">
@@ -25,76 +110,169 @@
 					<nav id="nav">
 						<ul>
 							<li><a class="active" href="about.html" style="font-family: sans-serif;">About us</a></li>
-							<li><a href="program.html" style="font-family: sans-serif;">Programs</a></li>
+							<li><a href="programs.html" style="font-family: sans-serif;">Programs</a></li>
 							<li><a href="gallery.html" style="font-family: sans-serif;">Gallery</a></li>
 							<li><a href="contact.html"style="font-family: sans-serif;">Contact</a></li>
+							<li><a href="contact1.html" style="font-family: sans-serif;">Schedule a Tour</a></li>
 						</ul>
 					</nav>
 				</div>
 			</header>
+			<div class="dvdr"></div>
+
+
+			
 <br>
 <div id="aside" style="float: right;padding-right: 250px;padding-top: 5px;width: 620px;"> <span class="first" style="color:#343394;display: block;font-size: 35px;padding-top: 0; margin-left: 60px;" ><b>Where we stand</b></span>
 	<span style="color:#EA6B6E;display: block;font-size: 25px;padding-top: 10px; margin-left: 90px;"> - Our Standards - </span>
 	<ul class="section" style="list-style: disc inside;margin: 0;padding:0 0 25px;">
 <br>
 <br>
-<div style="margin-left: 70px;">
-<div class="card" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);transition: 0.3s; border-radius: 5px; width: 250px; margin-left: -400px; ">
-  <div class="container" style="padding: 2px 10px;">
-  <img src="images/program.jpg" style="width:230px; border-radius: 5px 5px 0 0;">
-  
-    <h4 style="font-size: 20px; color: #343394"><b>Educational Program & Practice</b></h4>
-    <p style="font-size: 19px; font-family:serif;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-  </div></div>
 
-<div class="card" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);transition: 0.3s; border-radius: 5px; width: 250px; margin-left: 10px; margin-top: -540px; ">
+<div class="row" style="padding-top: 50px;">
+ <div class="column" style="float: left;width: 50%;padding: 0 8px;box-sizing: border-box;display: block;">
+<div class="card" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);transition: 0.3s; border-radius: 5px; width: 350px; margin-left: -400px; ">
   <div class="container" style="padding: 2px 10px;">
-  <img src="images/program.jpg" style="width:230px; border-radius: 5px 5px 0 0;">
+  <img src="images/program.jpg" style="width:330px; border-radius: 5px 5px 0 0;"><br><br>
   
-    <h4 style="font-size: 20px; color: #343394"><b>Children's Health & Safety</b></h4>
-
+    <h4 style="font-size: 20px; color: #343394; text-align: center;"><b>Educational Program & Practice</b></h4><br>
     <p style="font-size: 19px; font-family:serif;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+  </div></div></div></div>
+
+ <div class="column" style="float: left;width: 50%;box-sizing: border-box;display: block; margin-left: 10px;">
+<div class="card" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);transition: 0.3s; border-radius: 5px; width: 350px; margin-left: 10px; margin-top: -540px; ">
+ <div class="container" style="padding: 2px 10px;">
+ <img src="images/program.jpg" style="width:330px; border-radius: 5px 5px 0 0;"><br><br>
+  
+    <h4 style="font-size: 20px; color: #343394; text-align: center;"><b>Children's Health & Safety</b></h4><br>
+
+    <p style="font-size: 18px; font-family:serif;">We are taking extra steps to enable children to enjoy the benefits of social interaction and development while minimizing the risk of exposure to COVID-19 .We have also trained our staff members in sanitation and public health safety procedures recommended by top experts.To ensure further safety of your child, our school is equipped with CCTV cameras. Additionally, we have established strict guidlines for pick and drop off procedure to ensure that your child returns home safely after school.</p>
   </div>
 </div>
-<div class="card" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);transition: 0.3s; border-radius: 5px; width: 250px; margin-left:400px;margin-top: -540px; ">
+
+<div class="column" style="float: left;width: 50%;box-sizing: border-box;display: block; margin-left: 10px; padding-top: -200px;">
+<div class="card" style="box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);transition: 0.3s; border-radius: 5px; width: 350px; margin-left:400px;margin-top: -540px; ">
   <div class="container" style="padding: 2px 10px;">
-  <img src="images/program.jpg" style="width:230px; border-radius: 5px 5px 0 0;">
+  <img src="images/program.jpg" style="width:330px; border-radius: 5px 5px 0 0;"><br><br>
   
-    <h4 style="font-size: 20px; color: #343394"><b>Physical Environment</b></h4>
-    <p style="font-size: 19px; font-family:serif;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    <h4 style="font-size: 20px; color: #343394; text-align: center;"><b>Physical Environment</b></h4><br>
+    <p style="font-size: 18px; font-family:serif;">In Boston Overseas, the classrooms are designed and equipped in order to create a knowledge amplifying environment that emphasizes freedom, peace, independence, safety, comfort, appearance, activities, and much more. Our classrooms are made to precision in away that enables the child to be able to do activities and explore the classroom without the immediate help from a teacher. This allows the child’s independence and responsibility to grow.<br></p>
 </div>
 
+<div style="float: right;padding-right: 250px;padding-top: 100px;width: 620px;"> <span style="color:#343394;display: block;font-size: 35px;padding-top: 0; margin-left: 200px; "><b>What we do</b></span></div>
 
-    <div style="float: right;padding-right: 250px;padding-top: 100px;width: 620px;"> <span style="color:#343394;display: block;font-size: 35px;padding-top: 0; margin-left: 250px;" ><b>What we do</b></span>
+<div style="float: right;padding-right: 500px;padding-top: 100px;width: 620px;">
+<section id="services" class="services">
+<div class="row">
+  <div class="column" style="margin-right: 300px;">
+  	
+            <div class="icon-box">
+              <div class="icon"><img src="images/salad.png" style="width:70px;"></div>
+              <h4><a href="">Organic Meals</a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+          </div>
+      </section>
+  </div>
+  
 
+<div style="float: right;padding-right: 100px;width: 620px;margin-top: -320px;">
+<section id="services" class="services">
+<div class="row" style="margin-right: 300px;">
+  <div class="icon-box">
+   <div class="icon"><img src="images/activities.png" style="width:80px;"></div>
+    <h4><a href="">Indoor Activities</a></h4>
+     <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+   </div>
+</div>
+</div>
+</section>
+</div>
+  
+<div style="float: left;width: 620px;margin-top: -330px;padding-left: 450px;">
+<section id="services" class="services">
+<div class="row" style="margin-right: 300px;">
+  <div class="icon-box">
+   <div class="icon"><img src="images/tennis.png" style="width:80px;"></div>
+    <h4><a href="">Outdoor Activities</a></h4>
+     <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+   </div>
+</div>
+</div>
+</section>
+</div>
 
-<br><br>
-<section class="promo">
-				<div class="slider-wrap" style="margin-left: -250px; font-size: 21px; line-height: 2.0;">
-					<ul class="slider">
-						<li>
-							<img class="slide" src="images/img-slide02.jpg" alt="">
-							<img class="slide-mask" src="images/bg_slider-mask.png" alt="">
-							<div class="slide-info">
-								<ul style="margin-left: -150px; margin-top: -50px;">
-									<li><img src="images/football.png" style="width: 20px; ">&nbsp;Morning Breakfast</li>
-									<li><img src="images/football.png" style="width: 20px; ">&nbsp;Organic Lunch</li>
-									<li><img src="images/football.png" style="width: 20px; ">&nbsp;Evening Snack</li>
-									<li><img src="images/football.png" style="width: 20px; ">&nbsp;Indoor Activities</li>
-									<li><img src="images/football.png" style="width: 20px; ">&nbsp;Cooking & Baking</li>
-									<li><img src="images/football.png" style="width: 20px; ">&nbsp;Music</li>
-									<li><img src="images/football.png" style="width: 20px; ">&nbsp;Dancing</li>
-									<li><img src="images/football.png" style="width: 20px; ">&nbsp;Gardening</li>
+<div style="float: right;padding-right: 50px;padding-top: 50px;width: 620px;">
+<section id="services" class="services">
+<div class="row">
+  <div class="column" style="margin-right: 300px;">
+  	
+            <div class="icon-box">
+              <div class="icon"><img src="images/cooking.png" style="width:70px;"></div>
+              <h4><a href="">Cooking & Baking</a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+          </div>
+      </section>
+  </div>
+  
+  <div style="float: right;width: 620px;margin-top: -330px;margin-right: -350px;">
+<section id="services" class="services">
+<div class="row" style="margin-right: 300px;">
+  <div class="icon-box">
+  <div class="icon"><img src="images/orchard.png" style="width:70px;"></div>
+    <h4><a href="">Gardening</a></h4>
+     <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+   </div>
+</div>
+</div>
+</section>
+</div>
 
-								</ul>
-								
-								
-							</div>
-						</li>
-					</ul>
-				</div>
-			</section>
-   </div></div></div></ul></div></div><br><br>
+<div style="float: left;width: 620px;margin-top: -340px;padding-left: 470px;">
+<section id="services" class="services">
+<div class="row" style="margin-right: 300px;">
+  <div class="icon-box">
+   <div class="icon"><img src="images/singing.png" style="width:70px;"></div>
+    <h4><a href="">Music</a></h4>
+     <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+   </div>
+</div>
+</div>
+</section>
+</div>
+
+<div style="float: right;padding-right: 600px;padding-top: 50px;width: 620px;">
+<section id="services" class="services">
+<div class="row">
+  <div class="column" style="margin-right: 300px;">
+  	
+            <div class="icon-box">
+              <div class="icon"><img src="images/dance.png" style="width:70px;"></div>
+              <h4><a href="">Dancing</a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+          </div>
+      </section>
+  </div>
+
+  <div style="float: right;width: 620px;margin-top: -330px;margin-right: 200px;">
+<section id="services" class="services">
+<div class="row" style="margin-right: 300px;">
+  <div class="icon-box">
+   <div class="icon"><img src="images/balloon.png" style="width:70px;"></div>
+    <h4><a href="">French Language</a></h4>
+     <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+   </div>
+</div>
+</div>
+</section>
+</div>
+<br>
+<br>
 
 
 
@@ -107,14 +285,27 @@
 							<div class="col_wrap">
 								<div class="col">
 									<h3 style="font-family: sans-serif;">Our address</h3>
-									<address class="map">1186 Madison Ave, NY 10173</address>
-									<address class="mail"><a href="mailto:contact@kidschool.com">contact@kidschool.com</a></address>
-									<address class="phone">(580) 845 982 431</address>
+									<address class="map">174/10 Uthuwankanda Road, Thalawathugoda, Colombo, Sri Lanka</address>
+									<address class="mail"><a href="mailto:contact@kidschool.com">info@bostonoverseas.com</a></address>
+									<address class="phone">+94 77 077 1473</address>
 								</div>
 							</div>
 
-						<div class="col_wrap">
+							<div class="col_wrap">
 								<div class="col" style="margin-left: 130px;">
+									<h3 style="font-family: sans-serif; text-align: center;">Quick Links</h3>
+              <ul class="nav nav-pills" style="line-height: 1.8; text-align: center;">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact1.html">Schedule a Tour</a></li>
+							</ul>
+						</div>
+					</div>
+						<div class="col_wrap">
+								<div class="col" style="margin-left: 270px;">
 									<h3 style="font-family: sans-serif;">Follow us</h3>
 									<p class="social">Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium</p>
 									<ul class="social">
@@ -123,18 +314,6 @@
 										<li><a class="twitter" href="#">Twitter</a></li>
 										<li><a class="pinterest" href="#">Pinterest</a></li>
 									</ul>
-								</div>
-							</div>
-							<div class="col_wrap">
-								<div class="col" style="margin-left: 250px;">
-									<h3 style="font-family: sans-serif;">Newsletter</h3>
-									<p class="form-newsletter">Voluptas sit aspernatur consequuntur.</p>
-									<form action="#" class="form-newsletter">
-										<fieldset>
-											<input type="email" placeholder="Your email..." />
-											<input class="btn white" type="submit" value="Subscribe" />
-										</fieldset>
-									</form>
 								</div>
 							</div>
 						</div>
@@ -162,5 +341,11 @@ document.write(' All Rights Reserved');
 	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
 	<script type="text/javascript" src="js/jquery.placeholder.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+</div>
+</div>
+</ul>
+</div>
+</div>
+</div>
 </body>
 </html>

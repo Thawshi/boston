@@ -144,12 +144,18 @@ img {
   opacity: 1;
 }
 
-img.hover-shadow {
-  transition: 0.3s;
+.gallery .gallery-item {
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
 }
 
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.gallery .gallery-item img {
+  transition: all ease-in-out 0.4s;
+}
+
+.gallery .gallery-item:hover img {
+  transform: scale(1.1);
 }
 </style>
 
@@ -165,9 +171,10 @@ img.hover-shadow {
 					<nav id="nav">
 						<ul>
 							<li><a href="about.html">About us</a></li>
-							<li><a href="program.html">Programs</a></li>
+							<li><a href="programs.html">Programs</a></li>
 							<li><a class="active" href="gallery.html">Gallery</a></li>
 							<li><a href="contact.html">Contact</a></li>
+              <li><a href="contact1.html" style="font-family: sans-serif;">Schedule a Tour</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -183,135 +190,78 @@ img.hover-shadow {
 
 <div class="row">
   <div class="column">
-    <img src="images/resource2.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    <div class="gallery-item">
+    <img src="images/resource2.jpg" style="width:100%;"  class="img-fluid">
   </div>
+</div>
   <div class="column">
-    <img src="images/resource.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    <div class="gallery-item">
+      <img src="images/resource1.jpg" style="width:100%;"  class="img-fluid">
   </div>
-  <div class="column">
-    <img src="images/resource4.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="images/resource3.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-  </div>
+</div>
+<div class="column">
+<div class="gallery-item">
+  <img src="images/resource4.jpg" style="width:100%;"  class="img-fluid">
+</div>
+</div>
+<div class="column">
+<div class="gallery-item">
+    <img src="images/resource3.jpg" style="width:100%;"  class="img-fluid">
+</div>
+</div>
 </div>
 <br><br><br>
 <div class="row">
   <div class="column">
-    <img src="images/resource4.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="images/resource2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="images/resource1.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="images/resource.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-  </div>
+   <div class="gallery-item">
+    <img src="images/resource4.jpg" style="width:100%;"  class="img-fluid">
+</div>
+</div>
+<div class="column">
+  <div class="gallery-item">
+   <img src="images/resource2.jpg" style="width:100%;"  class="img-fluid">
+ </div>
+</div>
+
+<div class="column">
+  <div class="gallery-item">
+   <img src="images/resource1.jpg" style="width:100%;"  class="img-fluid">
+ </div>
+</div>
+
+<div class="column">
+    <div class="gallery-item">
+   <img src="images/resource.jpg" style="width:100%;"  class="img-fluid">
+ </div>
+</div>
 </div>
 <br><br><br>
+
 <div class="row">
-  <div class="column">
-    <img src="images/resource3.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+<div class="column">
+  <div class="gallery-item">
+   <img src="images/resource.jpg" style="width:100%;"  class="img-fluid">
+ </div>
   </div>
   <div class="column">
-    <img src="images/resource1.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="images/resource4.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="images/resource.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-  </div>
+    <div class="gallery-item">
+   <img src="images/resource1.jpg" style="width:100%;"  class="img-fluid">
+ </div>
+</div>
+<div class="column">
+<div class="gallery-item">
+   <img src="images/resource4.jpg" style="width:100%;"  class="img-fluid">
+ </div>
+</div>
+<div class="column">
+  <div class="gallery-item">
+   <img src="images/resource3.jpg" style="width:100%;"  class="img-fluid">
+ </div>
+</div>
 </div>
 
 
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
 
-    <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
-      <img src="img_nature_wide.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
-      <img src="img_snow_wide.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 4</div>
-      <img src="img_mountains_wide.jpg" style="width:100%">
-    </div>
-    
-    <div class="mySlides">
-      <div class="numbertext">4 / 4</div>
-      <img src="img_lights_wide.jpg" style="width:100%">
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-
-    <div class="column">
-      <img class="demo cursor" src="img_nature_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-  </div>
-</div>
-
-<script>
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
-
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
 
 </div>
 </div>
@@ -326,15 +276,27 @@ function showSlides(n) {
 							<div class="col_wrap">
 								<div class="col">
 									<h3 style="font-family: sans-serif;">Our address</h3>
-									<address class="map">1186 Madison Ave, NY 10173</address>
-									<address class="mail"><a href="mailto:contact@kidschool.com">contact@kidschool.com</a></address>
-									<address class="phone">(580) 845 982 431</address>
+									<address class="map">174/10 Uthuwankanda Road, Thalawathugoda, Colombo, Sri Lanka</address>
+                  <address class="mail"><a href="mailto:contact@kidschool.com">info@bostonoverseas.com</a></address>
+                  <address class="phone">+94 77 077 1473</address>
 								</div>
 							</div>
-
+<div class="col_wrap">
+                <div class="col" style="margin-left: 130px;">
+                  <h3 style="font-family: sans-serif; text-align: center;">Quick Links</h3>
+              <ul class="nav nav-pills" style="line-height: 1.8; text-align: center;">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact1.html">Schedule a Tour</a></li>
+              </ul>
+            </div>
+          </div>
 
 						<div class="col_wrap">
-								<div class="col" style="margin-left: 130px;">
+								<div class="col" style="margin-left: 270px;">
 									<h3 style="font-family: sans-serif;">Follow us</h3>
 									<p class="social">Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium</p>
 									<ul class="social">
@@ -345,18 +307,7 @@ function showSlides(n) {
 									</ul>
 								</div>
 							</div>
-							<div class="col_wrap">
-								<div class="col" style="margin-left: 250px;">
-									<h3 style="font-family: sans-serif;">Newsletter</h3>
-									<p class="form-newsletter">Voluptas sit aspernatur consequuntur.</p>
-									<form action="#" class="form-newsletter">
-										<fieldset>
-											<input type="email" placeholder="Your email..." />
-											<input class="btn white" type="submit" value="Subscribe" />
-										</fieldset>
-									</form>
-								</div>
-							</div>
+							
 						</div>
 					</div>
 					<div class="footer-bottom">
