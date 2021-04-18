@@ -151,7 +151,7 @@ input[type=tel], input[type=url], input[type=password], input[type=text], input[
 body {
 	font-family: 'Arvo', serif;
 	font-size: 25px;
-	color: #9e9994;
+	color: #0000FF;
 	background: #fffbf7;
 	-webkit-text-size-adjust: none; 
 }
@@ -305,10 +305,10 @@ input.white[type=submit]:hover{
 	padding: 0 25px;
 	font-family: 'Gochi Hand', cursive;
 	font-size: 24px;
-	color: #ea6b6e;
+	color: #0000FF;
 }
 #nav ul a {
-	color: #98785b;
+	color: #343394;
 }
 #nav ul a:hover, #nav ul a.active {
 	color: #ea6b6e;
@@ -1019,9 +1019,9 @@ input.white[type=submit]:hover{
 	max-width: 1170px;
 	margin: 0 auto;
 	padding: 0 20px 40px;
-	color: #808080;
+	color: #375fac;
 }
-#footer a {color: #4e87a0;}
+#footer a {color: #375fac;}
 #footer .col-holder {
 	overflow: hidden;
 	margin: 0 0 0 -2%;
@@ -1041,7 +1041,7 @@ input.white[type=submit]:hover{
 	padding-top: 35px;
 	font-family: 'Gochi Hand', cursive;
 	font-size: 36px;
-	color: #808080;
+	color: #6062bc;
 	text-shadow: 2px 2px 3px rgba(22,22,23,0.11);
 }
 #footer address {
@@ -1132,7 +1132,7 @@ input.white[type=submit]:hover{
 }
 .footer-bottom {
 	width: 100%;
-	color: #6ca0b7;
+	color: #375fac;
 	font-size: 14px;
 	text-align: center;
 }
